@@ -24,7 +24,7 @@ def start(update: Update, context: CallbackContext):
     user_id = update.effective_user.id
     subscribers.add(user_id)
     save_subscribers()
-    update.message.reply_text("✅ 你已订阅")
+    update.message.reply_text("Done ✅")
 
 def broadcast(update: Update, context: CallbackContext):
     if update.effective_user.id != ADMIN_ID:
@@ -103,7 +103,7 @@ def broadcastbtn(update: Update, context: CallbackContext):
     url = context.args[0]
     caption = context.args[1]
     link = context.args[2]
-    keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("点击查看", url=link)]])
+    keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("Booking Now", url=link)]])
     success, fail = 0, 0
     for uid in subscribers:
         try:
@@ -120,7 +120,7 @@ def broadcastvidbtn(update: Update, context: CallbackContext):
     url = context.args[0]
     caption = context.args[1]
     link = context.args[2]
-    keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("点击查看", url=link)]])
+    keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("Booking NOW", url=link)]])
     success, fail = 0, 0
     for uid in subscribers:
         try:
