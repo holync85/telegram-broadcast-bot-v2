@@ -38,7 +38,7 @@ def start(update: Update, context: CallbackContext):
     if user_id not in subscribers:
         subscribers.add(user_id)
         save_subscribers()
-    update.message.reply_text("✅ 你已订阅")
+    update.message.reply_text("Done ✅")
 
 def broadcast(update: Update, context: CallbackContext):
     if update.effective_user.id != ADMIN_ID:
