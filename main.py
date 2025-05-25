@@ -227,13 +227,13 @@ def jb_hot_area(update: Update, context: CallbackContext):
         [InlineKeyboardButton("Sri Tebrau", url="https://www.jbescortsvc.com/jb-hot-area/sri-tebrau")],
         [InlineKeyboardButton("Sri Tebrau 2", url="https://www.jbescortsvc.com/jb-hot-area/sri-tebrau-2")],
     ])
-    update.message.reply_text("请选择区域：", reply_markup=keyboard)
+    update.message.reply_text("Click Area：", reply_markup=keyboard)
 
 
 def jb_1_area(update: Update, context: CallbackContext):
     keyboard = InlineKeyboardMarkup([
-        [InlineKeyboardButton("Desa Tebrau", url="https://www.jbescortsvc.com/jb-1-area/desa-tebrau-1")],
         [InlineKeyboardButton("Bukit Indah", url="https://www.jbescortsvc.com/jb-1-area/bukit-indah-1")],
+        [InlineKeyboardButton("Desa Tebrau", url="https://www.jbescortsvc.com/jb-1-area/desa-tebrau-1")],
         [InlineKeyboardButton("JB Town", url="https://www.jbescortsvc.com/jb-1-area/jb-town-2")],
         [InlineKeyboardButton("Mount Austin", url="https://www.jbescortsvc.com/jb-1-area/mount-austin")],
         [InlineKeyboardButton("Nusa Bestari", url="https://www.jbescortsvc.com/jb-1-area/nusa-bestari")],
@@ -243,13 +243,14 @@ def jb_1_area(update: Update, context: CallbackContext):
         [InlineKeyboardButton("Sentosa Shop", url="https://www.jbescortsvc.com/jb-1-area/sentosa-shop")],
         [InlineKeyboardButton("Sentosa 2 Shop", url="https://www.jbescortsvc.com/jb-1-area/sentosa-2-shop")],
     ])
-    update.message.reply_text("请选择 JB 1 区域：", reply_markup=keyboard)
+    update.message.reply_text("Click Area：", reply_markup=keyboard)
 
 
 def jb_2_area(update: Update, context: CallbackContext):
     keyboard = InlineKeyboardMarkup([
         [InlineKeyboardButton("Bukit Indah", url="https://www.jbescortsvc.com/jb-2-area/bukit-indah")],
         [InlineKeyboardButton("Desa Tebrau", url="https://www.jbescortsvc.com/jb-2-area/desa-tebrau")],
+        [InlineKeyboardButton("JB Town", url="https://www.jbescortsvc.com/jb-2-area/jb-town")],
         [InlineKeyboardButton("Pelangi", url="https://www.jbescortsvc.com/jb-2-area/pelangi")],
         [InlineKeyboardButton("Perling", url="https://www.jbescortsvc.com/jb-2-area/perling")],
         [InlineKeyboardButton("Permas", url="https://www.jbescortsvc.com/jb-2-area/permas")],
@@ -257,7 +258,7 @@ def jb_2_area(update: Update, context: CallbackContext):
         [InlineKeyboardButton("Nusa Bestari (CN)", url="https://www.jbescortsvc.com/jb-2-area/nusa-bestari-cn")],
         [InlineKeyboardButton("Sentosa (CN)", url="https://www.jbescortsvc.com/jb-2-area/sentosa-cn")],
     ])
-    update.message.reply_text("请选择 JB 2 区域：", reply_markup=keyboard)
+    update.message.reply_text("Click Area：", reply_markup=keyboard)
 
 
 def keep_alive():
