@@ -186,14 +186,21 @@ def broadcastvidbtn(update: Update, context: CallbackContext):
     update.message.reply_text(f"✅ 视频+按钮发送 {success} 人，失败 {fail} 人")
 
 def broadcastpicbtn(update: Update, context: CallbackContext):
-    if update.effective_user.id != ADMIN_ID: return
-    if len(context.args) < 4:
-        return update.message.reply_text("用法：/broadcastpicbtn 图片链接 说明文字 按钮文字 按钮链接")
+    if update.effective_user.id != ADMIN_ID:
+        return update.message.reply_text("❌ 无权限")
+
+    if len(context.args) < 2:
+        return update.message.reply_text("用法：/broadcastpicbtn 图片链接 说明文字")
+
     url = context.args[0]
-    caption = context.args[1]
-    btn_text = context.args[2]
-    link = context.args[3]
-    keyboard = InlineKeyboardMarkup([[InlineKeyboardButton(btn_text, url=link)]])
+    caption = ' '.join(context.args[1:])
+
+    keyboard = InlineKeyboardMarkup([
+        [InlineKeyboardButton("📍 Booking Now", url="https://t.me/jbescort7")],
+        [InlineKeyboardButton("📞 WhatsApp", url="https://wa.me/601157752859?text=PM_JB")],
+        [InlineKeyboardButton("🧑‍💻 Live Booking", url="https://go.crisp.chat/chat/embed/?website_id=67d3163f-bdc3-4f3c-a603-e13ab2c65730")]
+    ])
+
     success, fail = 0, 0
     for uid in list(subscribers):
         try:
@@ -202,17 +209,25 @@ def broadcastpicbtn(update: Update, context: CallbackContext):
         except:
             fail += 1
         time.sleep(0.5)
-    update.message.reply_text(f"✅ 图片+说明+按钮发送 {success} 人，失败 {fail} 人")
+
+    update.message.reply_text(f"✅ 图片+说明+固定按钮发送 {success} 人，失败 {fail} 人")
 
 def broadcastvidfullbtn(update: Update, context: CallbackContext):
-    if update.effective_user.id != ADMIN_ID: return
-    if len(context.args) < 4:
-        return update.message.reply_text("用法：/broadcastvidfullbtn 视频链接 说明文字 按钮文字 按钮链接")
+    if update.effective_user.id != ADMIN_ID:
+        return update.message.reply_text("❌ 无权限")
+
+    if len(context.args) < 2:
+        return update.message.reply_text("用法：/broadcastvidfullbtn 视频链接 说明文字")
+
     url = context.args[0]
-    caption = context.args[1]
-    btn_text = context.args[2]
-    link = context.args[3]
-    keyboard = InlineKeyboardMarkup([[InlineKeyboardButton(btn_text, url=link)]])
+    caption = ' '.join(context.args[1:])
+
+    keyboard = InlineKeyboardMarkup([
+        [InlineKeyboardButton("📍 Booking Now", url="https://t.me/jbescort7")],
+        [InlineKeyboardButton("📞 WhatsApp", url="https://wa.me/601157752859?text=PM_JB")],
+        [InlineKeyboardButton("🧑‍💻 Live Booking", url="https://go.crisp.chat/chat/embed/?website_id=67d3163f-bdc3-4f3c-a603-e13ab2c65730")]
+    ])
+
     success, fail = 0, 0
     for uid in list(subscribers):
         try:
@@ -221,7 +236,8 @@ def broadcastvidfullbtn(update: Update, context: CallbackContext):
         except:
             fail += 1
         time.sleep(0.5)
-    update.message.reply_text(f"✅ 视频+说明+按钮发送 {success} 人，失败 {fail} 人")
+
+    update.message.reply_text(f"✅ 视频+说明+固定按钮发送 {success} 人，失败 {fail} 人")
 
 
 
