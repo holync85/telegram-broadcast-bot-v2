@@ -233,6 +233,7 @@ def jb_hot_area(update: Update, context: CallbackContext):
         [InlineKeyboardButton("Sentosa", url="https://www.jbescortsvc.com/jb-hot-area/sentosa")],
         [InlineKeyboardButton("Sri Tebrau", url="https://www.jbescortsvc.com/jb-hot-area/sri-tebrau")],
         [InlineKeyboardButton("Sri Tebrau 2", url="https://www.jbescortsvc.com/jb-hot-area/sri-tebrau-2")],
+        [InlineKeyboardButton("Permas", url="https://www.jbescortsvc.com/jb-1-area/permas-1")],
     ])
     update.message.reply_text("Click Area：", reply_markup=keyboard)
 
@@ -244,7 +245,6 @@ def jb_1_area(update: Update, context: CallbackContext):
         [InlineKeyboardButton("JB Town", url="https://www.jbescortsvc.com/jb-1-area/jb-town-2")],
         [InlineKeyboardButton("Mount Austin", url="https://www.jbescortsvc.com/jb-1-area/mount-austin")],
         [InlineKeyboardButton("Nusa Bestari", url="https://www.jbescortsvc.com/jb-1-area/nusa-bestari")],
-        [InlineKeyboardButton("Permas", url="https://www.jbescortsvc.com/jb-1-area/permas-1")],
         [InlineKeyboardButton("Taman Daya", url="https://www.jbescortsvc.com/jb-1-area/taman-daya")],
         [InlineKeyboardButton("Permas Shop", url="https://www.jbescortsvc.com/jb-1-area/permas-shop")],
         [InlineKeyboardButton("Sentosa Shop", url="https://www.jbescortsvc.com/jb-1-area/sentosa-shop")],
@@ -259,7 +259,6 @@ def jb_2_area(update: Update, context: CallbackContext):
         [InlineKeyboardButton("Desa Tebrau", url="https://www.jbescortsvc.com/jb-2-area/desa-tebrau")],
         [InlineKeyboardButton("JB Town", url="https://www.jbescortsvc.com/jb-2-area/jb-town")],
         [InlineKeyboardButton("Pelangi", url="https://www.jbescortsvc.com/jb-2-area/pelangi")],
-        [InlineKeyboardButton("Perling", url="https://www.jbescortsvc.com/jb-2-area/perling")],
         [InlineKeyboardButton("Permas", url="https://www.jbescortsvc.com/jb-2-area/permas")],
         [InlineKeyboardButton("KSL (CN)", url="https://www.jbescortsvc.com/jb-2-area/ksl-cn")],
         [InlineKeyboardButton("Nusa Bestari (CN)", url="https://www.jbescortsvc.com/jb-2-area/nusa-bestari-cn")],
