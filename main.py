@@ -197,7 +197,9 @@ def broadcastpicbtn(update: Update, context: CallbackContext):
 
     keyboard = InlineKeyboardMarkup([
         [InlineKeyboardButton("📍 Booking Now", url="https://t.me/jbescort7")],
+        [InlineKeyboardButton("📍 Booking Now 2", url="https://t.me/candy8877")],
         [InlineKeyboardButton("📞 WhatsApp", url="https://wa.me/601157752859?text=PM_JB")],
+        [InlineKeyboardButton("📞 WhatsApp 2", url="https://wa.me/601157774806?text=PM_JB")],
         [InlineKeyboardButton("🧑‍💻 Live Booking", url="https://go.crisp.chat/chat/embed/?website_id=67d3163f-bdc3-4f3c-a603-e13ab2c65730")]
     ])
 
@@ -224,7 +226,9 @@ def broadcastvidfullbtn(update: Update, context: CallbackContext):
 
     keyboard = InlineKeyboardMarkup([
         [InlineKeyboardButton("📍 Booking Now", url="https://t.me/jbescort7")],
+        [InlineKeyboardButton("📍 Booking Now 2", url="https://t.me/candy8877")],
         [InlineKeyboardButton("📞 WhatsApp", url="https://wa.me/601157752859?text=PM_JB")],
+        [InlineKeyboardButton("📞 WhatsApp 2", url="https://wa.me/601157774806?text=PM_JB")],
         [InlineKeyboardButton("🧑‍💻 Live Booking", url="https://go.crisp.chat/chat/embed/?website_id=67d3163f-bdc3-4f3c-a603-e13ab2c65730")]
     ])
 
