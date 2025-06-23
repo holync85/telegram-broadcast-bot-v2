@@ -258,6 +258,7 @@ def jb_hot_area(update: Update, context: CallbackContext):
 
 def jb_1_area(update: Update, context: CallbackContext):
     keyboard = InlineKeyboardMarkup([
+        [InlineKeyboardButton("Bayu Puteri", url="https://www.jbescortsvc.com/jb-1-area/bayu-puteri")],
         [InlineKeyboardButton("Bukit Indah", url="https://www.jbescortsvc.com/jb-1-area/bukit-indah-1")],
         [InlineKeyboardButton("Desa Tebrau", url="https://www.jbescortsvc.com/jb-1-area/desa-tebrau-1")],
         [InlineKeyboardButton("JB Town", url="https://www.jbescortsvc.com/jb-1-area/jb-town-2")],
@@ -288,7 +289,9 @@ def jb_2_area(update: Update, context: CallbackContext):
 def booking(update: Update, context: CallbackContext):
     keyboard = InlineKeyboardMarkup([
         [InlineKeyboardButton("WhatsApp", url="https://wa.me/601157752859?text=PM_JB")],
+        [InlineKeyboardButton("WhatsApp2", url="https://wa.me/601157774806?text=PM_JB")],
         [InlineKeyboardButton("Telegram Admin", url="https://t.me/jbescort7")],
+        [InlineKeyboardButton("Telegram Admin2", url="https://t.me/candy8877")],
         [InlineKeyboardButton("Live Admin", url="https://go.crisp.chat/chat/embed/?website_id=67d3163f-bdc3-4f3c-a603-e13ab2c65730")],     
     ])
     update.message.reply_text("Click Area：", reply_markup=keyboard)
