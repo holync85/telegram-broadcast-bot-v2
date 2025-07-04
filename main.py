@@ -251,7 +251,7 @@ def jb_hot_area(update: Update, context: CallbackContext):
         [InlineKeyboardButton("JB Town", url="https://www.jbescortsvc.com/jb-hot-area/jb-town-1")],
         [InlineKeyboardButton("Setia Indah", url="https://www.jbescortsvc.com/jb-hot-area/setia-indah")],
         [InlineKeyboardButton("Crest Austin", url="https://www.jbescortsvc.com/jb-hot-area/crest-austin")],
-        [InlineKeyboardButton("KSL)", url="https://www.jbescortsvc.com/jb-hot-area/ksl")],
+        [InlineKeyboardButton("KSL", url="https://www.jbescortsvc.com/jb-hot-area/ksl")],
         [InlineKeyboardButton("Sentosa", url="https://www.jbescortsvc.com/jb-hot-area/sentosa")],
         [InlineKeyboardButton("Sri Tebrau", url="https://www.jbescortsvc.com/jb-hot-area/sri-tebrau")],
         [InlineKeyboardButton("Sri Tebrau 2", url="https://www.jbescortsvc.com/jb-hot-area/sri-tebrau-2")],
