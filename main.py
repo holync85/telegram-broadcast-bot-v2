@@ -268,7 +268,7 @@ def jb_1_area(update: Update, context: CallbackContext):
         [InlineKeyboardButton("JB Town", url="https://www.jbescortsvc.com/jb-1-area/jb-town-2")],
         [InlineKeyboardButton("Mount Austin", url="https://www.jbescortsvc.com/jb-1-area/mount-austin")],
         [InlineKeyboardButton("Skudai", url="https://www.jbescortsvc.com/jb-1-area/skudai")],
-        [InlineKeyboardButton("Taman Daya", url="https://www.jbescortsvc.com/jb-1-area/taman-daya")],
+        [InlineKeyboardButton("Sri Yaacob", url="https://www.jbescortsvc.com/jb-1-area/sri-yaacob")],
         [InlineKeyboardButton("Permas Shop", url="https://www.jbescortsvc.com/jb-1-area/permas-shop")],
         [InlineKeyboardButton("Sentosa Shop", url="https://www.jbescortsvc.com/jb-1-area/sentosa-shop")],
         [InlineKeyboardButton("Sentosa 2 Shop", url="https://www.jbescortsvc.com/jb-1-area/sentosa-2-shop")],
