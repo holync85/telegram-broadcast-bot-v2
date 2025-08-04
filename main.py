@@ -197,9 +197,7 @@ def broadcastpicbtn(update: Update, context: CallbackContext):
 
     keyboard = InlineKeyboardMarkup([
         [InlineKeyboardButton("📍 Booking Now", url="https://t.me/jbescort7")],
-        [InlineKeyboardButton("📍 Booking Now 2", url="https://t.me/candy8877")],
         [InlineKeyboardButton("📞 WhatsApp", url="https://wa.me/601157752859?text=PM_JB")],
-        [InlineKeyboardButton("📞 WhatsApp 2", url="https://wa.me/601157774806?text=PM_JB")],
         [InlineKeyboardButton("🧑‍💻 Live Booking", url="https://go.crisp.chat/chat/embed/?website_id=67d3163f-bdc3-4f3c-a603-e13ab2c65730")]
     ])
 
@@ -226,9 +224,7 @@ def broadcastvidfullbtn(update: Update, context: CallbackContext):
 
     keyboard = InlineKeyboardMarkup([
         [InlineKeyboardButton("📍 Booking Now", url="https://t.me/jbescort7")],
-        [InlineKeyboardButton("📍 Booking Now 2", url="https://t.me/candy8877")],
         [InlineKeyboardButton("📞 WhatsApp", url="https://wa.me/601157752859?text=PM_JB")],
-        [InlineKeyboardButton("📞 WhatsApp 2", url="https://wa.me/601157774806?text=PM_JB")],
         [InlineKeyboardButton("🧑‍💻 Live Booking", url="https://go.crisp.chat/chat/embed/?website_id=67d3163f-bdc3-4f3c-a603-e13ab2c65730")]
     ])
 
@@ -269,9 +265,6 @@ def jb_1_area(update: Update, context: CallbackContext):
         [InlineKeyboardButton("Mount Austin", url="https://www.jbescortsvc.com/jb-1-area/mount-austin")],
         [InlineKeyboardButton("Skudai", url="https://www.jbescortsvc.com/jb-1-area/skudai")],
         [InlineKeyboardButton("Sri Yaacob", url="https://www.jbescortsvc.com/jb-1-area/sri-yaacob")],
-        [InlineKeyboardButton("Permas Shop", url="https://www.jbescortsvc.com/jb-1-area/permas-shop")],
-        [InlineKeyboardButton("Sentosa Shop", url="https://www.jbescortsvc.com/jb-1-area/sentosa-shop")],
-        [InlineKeyboardButton("Sentosa 2 Shop", url="https://www.jbescortsvc.com/jb-1-area/sentosa-2-shop")],
     ])
     update.message.reply_text("Click Area：", reply_markup=keyboard)
 
@@ -290,12 +283,18 @@ def jb_2_area(update: Update, context: CallbackContext):
     ])
     update.message.reply_text("Click Area：", reply_markup=keyboard)
 
+def jb_shop(update: Update, context: CallbackContext):
+    keyboard = InlineKeyboardMarkup([
+        [InlineKeyboardButton("Permas Shop", url="https://www.jbescortsvc.com/jb-1-area/permas-shop")],
+        [InlineKeyboardButton("Sentosa Shop", url="https://www.jbescortsvc.com/jb-1-area/sentosa-shop")],
+        [InlineKeyboardButton("Sentosa 2 Shop", url="https://www.jbescortsvc.com/jb-1-area/sentosa-2-shop")],
+    ])
+    update.message.reply_text("Click Area：", reply_markup=keyboard)
+
 def booking(update: Update, context: CallbackContext):
     keyboard = InlineKeyboardMarkup([
         [InlineKeyboardButton("WhatsApp", url="https://wa.me/601157752859?text=PM_JB")],
-        [InlineKeyboardButton("WhatsApp2", url="https://wa.me/601157774806?text=PM_JB")],
         [InlineKeyboardButton("Telegram Admin", url="https://t.me/jbescort7")],
-        [InlineKeyboardButton("Telegram Admin2", url="https://t.me/candy8877")],
         [InlineKeyboardButton("Live Admin", url="https://go.crisp.chat/chat/embed/?website_id=67d3163f-bdc3-4f3c-a603-e13ab2c65730")],     
     ])
     update.message.reply_text("Click Area：", reply_markup=keyboard)
@@ -327,6 +326,7 @@ def main():
     dp.add_handler(CommandHandler("jbhot", jb_hot_area))
     dp.add_handler(CommandHandler("jb1", jb_1_area))
     dp.add_handler(CommandHandler("jb2", jb_2_area))
+    dp.add_handler(CommandHandler("jbshop", jb_shop))
     dp.add_handler(CommandHandler("booking", booking))
 
     updater.start_polling()
