@@ -198,6 +198,7 @@ def broadcastpicbtn(update: Update, context: CallbackContext):
     keyboard = InlineKeyboardMarkup([
         [InlineKeyboardButton("📍 Booking Now", url="https://t.me/jbescort7")],
         [InlineKeyboardButton("📞 WhatsApp", url="https://wa.me/601157752859?text=PM_JB")],
+        [InlineKeyboardButton("📞 WhatsApp 2", url="https://wa.me/601157774798?text=PM_JB")],
         [InlineKeyboardButton("🧑‍💻 Live Booking", url="https://go.crisp.chat/chat/embed/?website_id=67d3163f-bdc3-4f3c-a603-e13ab2c65730")]
     ])
 
@@ -225,6 +226,7 @@ def broadcastvidfullbtn(update: Update, context: CallbackContext):
     keyboard = InlineKeyboardMarkup([
         [InlineKeyboardButton("📍 Booking Now", url="https://t.me/jbescort7")],
         [InlineKeyboardButton("📞 WhatsApp", url="https://wa.me/601157752859?text=PM_JB")],
+        [InlineKeyboardButton("📞 WhatsApp 2", url="https://wa.me/601157774798?text=PM_JB")],
         [InlineKeyboardButton("🧑‍💻 Live Booking", url="https://go.crisp.chat/chat/embed/?website_id=67d3163f-bdc3-4f3c-a603-e13ab2c65730")]
     ])
 
@@ -296,6 +298,7 @@ def jb_shop(update: Update, context: CallbackContext):
 def booking(update: Update, context: CallbackContext):
     keyboard = InlineKeyboardMarkup([
         [InlineKeyboardButton("WhatsApp", url="https://wa.me/601157752859?text=PM_JB")],
+        [InlineKeyboardButton("WhatsApp 2", url="https://wa.me/601157774798?text=PM_JB")],
         [InlineKeyboardButton("Telegram Admin", url="https://t.me/jbescort7")],
         [InlineKeyboardButton("Live Admin", url="https://go.crisp.chat/chat/embed/?website_id=67d3163f-bdc3-4f3c-a603-e13ab2c65730")],     
     ])
