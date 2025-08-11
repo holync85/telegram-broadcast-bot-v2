@@ -271,6 +271,7 @@ def jb_2_area(update: Update, context: CallbackContext):
         [InlineKeyboardButton("Bukit Indah", url="https://www.jbescortsvc.com/jb-2-area/bukit-indah")],
         [InlineKeyboardButton("Desa Tebrau", url="https://www.jbescortsvc.com/jb-2-area/desa-tebrau")],
         [InlineKeyboardButton("JB Town", url="https://www.jbescortsvc.com/jb-2-area/jb-town")],
+        [InlineKeyboardButton("Nusa Bestari", url="https://www.jbescortsvc.com/jb-2-area/nusa-bestari-1")],
         [InlineKeyboardButton("Pelangi", url="https://www.jbescortsvc.com/jb-2-area/pelangi")],
         [InlineKeyboardButton("Permas", url="https://www.jbescortsvc.com/jb-2-area/permas")],
         [InlineKeyboardButton("Sri Yaacob", url="https://www.jbescortsvc.com/jb-2-area/sri-yaacob")],
