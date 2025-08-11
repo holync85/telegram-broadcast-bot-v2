@@ -286,6 +286,7 @@ def jb_shop(update: Update, context: CallbackContext):
         [InlineKeyboardButton("Crest Austin", url="https://www.jbescortsvc.com/jb-shop/crest-austin")],
         [InlineKeyboardButton("KSL", url="https://www.jbescortsvc.com/jb-shop/ksl")],
         [InlineKeyboardButton("KSL 2", url="https://www.jbescortsvc.com/jb-shop/ksl-2")],
+        [InlineKeyboardButton("KSL 3", url="https://www.jbescortsvc.com/jb-shop/ksl-3")],
         [InlineKeyboardButton("Pelangi", url="https://www.jbescortsvc.com/jb-shop/pelangi-1")],
         [InlineKeyboardButton("Sentosa", url="https://www.jbescortsvc.com/jb-shop/sentosa")],
         [InlineKeyboardButton("Sri Tebrau", url="https://www.jbescortsvc.com/jb-shop/sri-tebrau")],
