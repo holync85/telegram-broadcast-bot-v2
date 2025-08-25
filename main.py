@@ -249,6 +249,7 @@ def jb_hot_area(update: Update, context: CallbackContext):
         [InlineKeyboardButton("JB Town", url="https://www.jbescortsvc.com/jb-hot-area/jb-town-1")],
         [InlineKeyboardButton("Setia Indah", url="https://www.jbescortsvc.com/jb-hot-area/setia-indah")],
         [InlineKeyboardButton("Permas", url="https://www.jbescortsvc.com/jb-hot-area/permas-1")],
+        [InlineKeyboardButton("Permas 2", url="https://www.jbescortsvc.com/jb-hot-area/permas-2")],
     ])
     update.message.reply_text("Click Area：", reply_markup=keyboard)
 
@@ -271,9 +272,7 @@ def jb_2_area(update: Update, context: CallbackContext):
         [InlineKeyboardButton("Bukit Indah", url="https://www.jbescortsvc.com/jb-2-area/bukit-indah")],
         [InlineKeyboardButton("Desa Tebrau", url="https://www.jbescortsvc.com/jb-2-area/desa-tebrau")],
         [InlineKeyboardButton("JB Town", url="https://www.jbescortsvc.com/jb-2-area/jb-town")],
-        [InlineKeyboardButton("Nusa Bestari", url="https://www.jbescortsvc.com/jb-2-area/nusa-bestari-1")],
         [InlineKeyboardButton("Pelangi", url="https://www.jbescortsvc.com/jb-2-area/pelangi")],
-        [InlineKeyboardButton("Permas", url="https://www.jbescortsvc.com/jb-2-area/permas")],
         [InlineKeyboardButton("Sri Yaacob", url="https://www.jbescortsvc.com/jb-2-area/sri-yaacob")],
         [InlineKeyboardButton("KSL (CN)", url="https://www.jbescortsvc.com/jb-2-area/ksl-cn")],
         [InlineKeyboardButton("Nusa Bestari (CN)", url="https://www.jbescortsvc.com/jb-2-area/nusa-bestari-cn")],
