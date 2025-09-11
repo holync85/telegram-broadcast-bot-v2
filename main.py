@@ -246,10 +246,10 @@ def broadcastvidfullbtn(update: Update, context: CallbackContext):
 
 def jb_hot_area(update: Update, context: CallbackContext):
     keyboard = InlineKeyboardMarkup([
+        [InlineKeyboardButton("DNP", url="https://www.jbescortsvc.com/jb-hot-area/dnp")],
         [InlineKeyboardButton("JB Town", url="https://www.jbescortsvc.com/jb-hot-area/jb-town-1")],
         [InlineKeyboardButton("Setia Indah", url="https://www.jbescortsvc.com/jb-hot-area/setia-indah")],
-        [InlineKeyboardButton("Permas", url="https://www.jbescortsvc.com/jb-hot-area/permas-1")],
-        [InlineKeyboardButton("Permas 2", url="https://www.jbescortsvc.com/jb-hot-area/permas-2")],
+        [InlineKeyboardButton("Permas", url="https://www.jbescortsvc.com/jb-hot-area/permas-1")],        
     ])
     update.message.reply_text("Click Area：", reply_markup=keyboard)
 
@@ -269,32 +269,17 @@ def jb_1_area(update: Update, context: CallbackContext):
 
 def jb_2_area(update: Update, context: CallbackContext):
     keyboard = InlineKeyboardMarkup([
+        [InlineKeyboardButton("Bayu Puteri", url="https://www.jbescortsvc.com/jb-2-area/bayu-puteri")],
         [InlineKeyboardButton("Bukit Indah", url="https://www.jbescortsvc.com/jb-2-area/bukit-indah")],
         [InlineKeyboardButton("Desa Tebrau", url="https://www.jbescortsvc.com/jb-2-area/desa-tebrau")],
-        [InlineKeyboardButton("JB Town", url="https://www.jbescortsvc.com/jb-2-area/jb-town")],
-        [InlineKeyboardButton("Pelangi", url="https://www.jbescortsvc.com/jb-2-area/pelangi")],
-        [InlineKeyboardButton("Sri Yaacob", url="https://www.jbescortsvc.com/jb-2-area/sri-yaacob")],
+        [InlineKeyboardButton("JB Town", url="https://www.jbescortsvc.com/jb-2-area/jb-town")],       
+        [InlineKeyboardButton("Permas", url="https://www.jbescortsvc.com/jb-2-area/permas")],
         [InlineKeyboardButton("KSL (CN)", url="https://www.jbescortsvc.com/jb-2-area/ksl-cn")],
         [InlineKeyboardButton("Nusa Bestari (CN)", url="https://www.jbescortsvc.com/jb-2-area/nusa-bestari-cn")],
         [InlineKeyboardButton("Sentosa (CN)", url="https://www.jbescortsvc.com/jb-2-area/sentosa-cn")],
     ])
     update.message.reply_text("Click Area：", reply_markup=keyboard)
-
-def jb_shop(update: Update, context: CallbackContext):
-    keyboard = InlineKeyboardMarkup([
-        [InlineKeyboardButton("Crest Austin", url="https://www.jbescortsvc.com/jb-shop/crest-austin")],
-        [InlineKeyboardButton("KSL", url="https://www.jbescortsvc.com/jb-shop/ksl")],
-        [InlineKeyboardButton("KSL 2", url="https://www.jbescortsvc.com/jb-shop/ksl-2")],
-        [InlineKeyboardButton("KSL 3", url="https://www.jbescortsvc.com/jb-shop/ksl-3")],
-        [InlineKeyboardButton("Pelangi", url="https://www.jbescortsvc.com/jb-shop/pelangi-1")],
-        [InlineKeyboardButton("Sentosa", url="https://www.jbescortsvc.com/jb-shop/sentosa")],
-        [InlineKeyboardButton("Sri Tebrau", url="https://www.jbescortsvc.com/jb-shop/sri-tebrau")],
-        [InlineKeyboardButton("Sri Tebrau 2", url="https://www.jbescortsvc.com/jb-shop/sri-tebrau-2")],
-        [InlineKeyboardButton("Permas Shop", url="https://www.jbescortsvc.com/jb-shop/permas-shoph")],
-        [InlineKeyboardButton("Sentosa Shop", url="https://www.jbescortsvc.com/jb-shop/sentosa-shop")],
-        [InlineKeyboardButton("Sentosa 2 Shop", url="https://www.jbescortsvc.com/jb-shop/sentosa-2-shop")],
-    ])
-    update.message.reply_text("Click Area：", reply_markup=keyboard)
+    
 
 def booking(update: Update, context: CallbackContext):
     keyboard = InlineKeyboardMarkup([
@@ -332,7 +317,6 @@ def main():
     dp.add_handler(CommandHandler("jbhot", jb_hot_area))
     dp.add_handler(CommandHandler("jb1", jb_1_area))
     dp.add_handler(CommandHandler("jb2", jb_2_area))
-    dp.add_handler(CommandHandler("jbshop", jb_shop))
     dp.add_handler(CommandHandler("booking", booking))
 
     updater.start_polling()
