@@ -213,6 +213,56 @@ def broadcastpicbtn(update: Update, context: CallbackContext):
 
     update.message.reply_text(f"✅ 图片+说明+固定按钮发送 {success} 人，失败 {fail} 人")
 
+
+def broadcastalbumbtn(update: Update, context: CallbackContext):
+    if update.effective_user.id != ADMIN_ID:
+        return update.message.reply_text("❌ 无权限")
+
+    # 解析参数：<url1> <url2> ... <urlN> -- <caption>
+    if len(context.args) < 4 or "--" not in context.args:
+        return update.message.reply_text("用法：/broadcastalbumbtn url1 url2 ... urlN -- 说明文字（至少2张，最多10张）")
+
+    sep_idx = context.args.index("--")
+    urls = context.args[:sep_idx]
+    caption = " ".join(context.args[sep_idx + 1:]).strip()
+
+    if len(urls) < 2:
+        return update.message.reply_text("请至少提供 2 个图片链接。")
+    if len(urls) > 10:
+        return update.message.reply_text("相册一次最多 10 张图片，请减少数量。")
+
+    # 构建相册媒体（只有第一张带 caption）
+    media = []
+    for i, u in enumerate(urls):
+        if i == 0:
+            media.append(InputMediaPhoto(media=u, caption=caption))
+        else:
+            media.append(InputMediaPhoto(media=u))
+
+    # 固定按钮
+    keyboard = InlineKeyboardMarkup([
+        [InlineKeyboardButton("📍 Booking Now", url="https://t.me/jbescort7")],
+        [InlineKeyboardButton("📞 WhatsApp", url="https://wa.me/601157752859?text=PM_JB")],
+        [InlineKeyboardButton("📞 WhatsApp 2", url="https://wa.me/601113130096?text=PM_JB")],
+        [InlineKeyboardButton("🧑‍💻 Live Booking", url="https://go.crisp.chat/chat/embed/?website_id=67d3163f-bdc3-4f3c-a603-e13ab2c65730")]
+    ])
+
+    success, fail = 0, 0
+    for uid in list(subscribers):
+        try:
+            # 1) 发送相册
+            context.bot.send_media_group(chat_id=uid, media=media)
+            # 2) 发送按钮消息（不重复说明文字，避免两条都显示长文本）
+            context.bot.send_message(chat_id=uid, text="👇 点击下面按钮预约/联系", reply_markup=keyboard)
+            success += 1
+        except Exception as e:
+            # 如果单人失败，计数即可，不中断整体广播
+            fail += 1
+        time.sleep(0.5)  # 轻微节流，避免触发限速
+
+    update.message.reply_text(f"✅ 相册+按钮发送 {success} 人，失败 {fail} 人")
+    
+
 def broadcastvidfullbtn(update: Update, context: CallbackContext):
     if update.effective_user.id != ADMIN_ID:
         return update.message.reply_text("❌ 无权限")
@@ -311,6 +361,7 @@ def main():
     dp.add_handler(CommandHandler("broadcastbtn", broadcastbtn))
     dp.add_handler(CommandHandler("broadcastvidbtn", broadcastvidbtn))
     dp.add_handler(CommandHandler("broadcastpicbtn", broadcastpicbtn))
+    dp.add_handler(CommandHandler("broadcastalbumbtn", broadcastalbumbtn))
     dp.add_handler(CommandHandler("broadcastvidfullbtn", broadcastvidfullbtn))
     dp.add_handler(CommandHandler("list", list_users))
     dp.add_handler(CommandHandler("count", count_subscribers))
