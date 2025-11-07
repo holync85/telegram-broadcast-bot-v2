@@ -299,7 +299,6 @@ def jb_hot_area(update: Update, context: CallbackContext):
         [InlineKeyboardButton("DNP", url="https://www.jbescortsvc.com/jb-hot-area/dnp")],
         [InlineKeyboardButton("JB Town", url="https://www.jbescortsvc.com/jb-hot-area/jb-town-1")],
         [InlineKeyboardButton("Setia Indah", url="https://www.jbescortsvc.com/jb-hot-area/setia-indah")],
-        [InlineKeyboardButton("Permas", url="https://www.jbescortsvc.com/jb-hot-area/permas-1")],        
     ])
     update.message.reply_text("Click Area：", reply_markup=keyboard)
 
@@ -309,8 +308,6 @@ def jb_1_area(update: Update, context: CallbackContext):
         [InlineKeyboardButton("Bukit Indah", url="https://www.jbescortsvc.com/jb-1-area/bukit-indah-1")],
         [InlineKeyboardButton("Desa Tebrau", url="https://www.jbescortsvc.com/jb-1-area/desa-tebrau-1")],
         [InlineKeyboardButton("JB Town", url="https://www.jbescortsvc.com/jb-1-area/jb-town-2")],
-        [InlineKeyboardButton("Mount Austin", url="https://www.jbescortsvc.com/jb-1-area/mount-austin")],
-        [InlineKeyboardButton("Nusa Bestari", url="https://www.jbescortsvc.com/jb-1-area/nusa-bestari")],
         [InlineKeyboardButton("Skudai", url="https://www.jbescortsvc.com/jb-1-area/skudai")],
         
     ])
@@ -323,10 +320,20 @@ def jb_2_area(update: Update, context: CallbackContext):
         [InlineKeyboardButton("Bukit Indah", url="https://www.jbescortsvc.com/jb-2-area/bukit-indah")],
         [InlineKeyboardButton("Desa Tebrau", url="https://www.jbescortsvc.com/jb-2-area/desa-tebrau")],
         [InlineKeyboardButton("JB Town", url="https://www.jbescortsvc.com/jb-2-area/jb-town")],       
+        [InlineKeyboardButton("Mount Austin", url="https://www.jbescortsvc.com/jb-2-area/mount-austin-1")], 
         [InlineKeyboardButton("Permas", url="https://www.jbescortsvc.com/jb-2-area/permas")],
+        [InlineKeyboardButton("Sri Yaacob", url="https://www.jbescortsvc.com/jb-2-area/sri-yaacob")],
         [InlineKeyboardButton("KSL (CN)", url="https://www.jbescortsvc.com/jb-2-area/ksl-cn")],
         [InlineKeyboardButton("Nusa Bestari (CN)", url="https://www.jbescortsvc.com/jb-2-area/nusa-bestari-cn")],
-        [InlineKeyboardButton("Sentosa (CN)", url="https://www.jbescortsvc.com/jb-2-area/sentosa-cn")],
+    ])
+    update.message.reply_text("Click Area：", reply_markup=keyboard)
+
+def jb_3_area(update: Update, context: CallbackContext):
+    keyboard = InlineKeyboardMarkup([
+        [InlineKeyboardButton("Kebun Teh", url="https://www.jbescortsvc.com/jb-3-area/kebun-teh")],
+        [InlineKeyboardButton("Nusa Bestari", url="https://www.jbescortsvc.com/jb-3-area/nusa-bestari")],
+        [InlineKeyboardButton("Nusa Bestari 2", url="https://www.jbescortsvc.com/jb-3-area/nusa-bestari-2")],
+        [InlineKeyboardButton("Taman Daya", url="https://www.jbescortsvc.com/jb-3-area/taman-daya")],
     ])
     update.message.reply_text("Click Area：", reply_markup=keyboard)
     
@@ -368,6 +375,7 @@ def main():
     dp.add_handler(CommandHandler("jbhot", jb_hot_area))
     dp.add_handler(CommandHandler("jb1", jb_1_area))
     dp.add_handler(CommandHandler("jb2", jb_2_area))
+    dp.add_handler(CommandHandler("jb3", jb_3_area))
     dp.add_handler(CommandHandler("booking", booking))
 
     updater.start_polling()
