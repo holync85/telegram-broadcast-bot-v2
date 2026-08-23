@@ -197,7 +197,7 @@ def broadcastpicbtn(update: Update, context: CallbackContext):
 
     keyboard = InlineKeyboardMarkup([
         [InlineKeyboardButton("📍 Booking Now", url="https://t.me/jbescort7")],
-        [InlineKeyboardButton("📞 WhatsApp", url="https://wa.me/60179857258?text=PM_JB")],
+        [InlineKeyboardButton("📞 WhatsApp", url="https://wa.me/6285194015040?text=PM_JB")],
         [InlineKeyboardButton("📞 WhatsApp 2", url="https://wa.me/601157752859?text=PM_JB")],
         [InlineKeyboardButton("🧑‍💻 Live Booking", url="https://go.crisp.chat/chat/embed/?website_id=67d3163f-bdc3-4f3c-a603-e13ab2c65730")]
     ])
@@ -242,7 +242,7 @@ def broadcastalbumbtn(update: Update, context: CallbackContext):
     # 固定按钮
     keyboard = InlineKeyboardMarkup([
         [InlineKeyboardButton("📍 Booking Now", url="https://t.me/jbescort7")],
-        [InlineKeyboardButton("📞 WhatsApp", url="https://wa.me/60179857258?text=PM_JB")],
+        [InlineKeyboardButton("📞 WhatsApp", url="https://wa.me/6285194015040?text=PM_JB")],
         [InlineKeyboardButton("📞 WhatsApp 2", url="https://wa.me/601157752859?text=PM_JB")],
         [InlineKeyboardButton("🧑‍💻 Live Booking", url="https://go.crisp.chat/chat/embed/?website_id=67d3163f-bdc3-4f3c-a603-e13ab2c65730")]
     ])
@@ -275,7 +275,7 @@ def broadcastvidfullbtn(update: Update, context: CallbackContext):
 
     keyboard = InlineKeyboardMarkup([
         [InlineKeyboardButton("📍 Booking Now", url="https://t.me/jbescort7")],
-        [InlineKeyboardButton("📞 WhatsApp", url="https://wa.me/60179857258?text=PM_JB")],
+        [InlineKeyboardButton("📞 WhatsApp", url="https://wa.me/6285194015040?text=PM_JB")],
         [InlineKeyboardButton("📞 WhatsApp 2", url="https://wa.me/601157752859?text=PM_JB")],
         [InlineKeyboardButton("🧑‍💻 Live Booking", url="https://go.crisp.chat/chat/embed/?website_id=67d3163f-bdc3-4f3c-a603-e13ab2c65730")]
     ])
@@ -297,6 +297,7 @@ def broadcastvidfullbtn(update: Update, context: CallbackContext):
 def jb_hot_area(update: Update, context: CallbackContext):
     keyboard = InlineKeyboardMarkup([
         [InlineKeyboardButton("CIQ", url="https://www.jbescortsvc.com/jb-hot-area/ciq")],
+        [InlineKeyboardButton("Sentosa", url="https://www.jbescortsvc.com/jb-hot-area/sentosa")],
         [InlineKeyboardButton("Sri Yaacob", url="https://www.jbescortsvc.com/jb-hot-area/sri-yaacob")],
     ])
     update.message.reply_text("Click Area：", reply_markup=keyboard)
@@ -306,7 +307,6 @@ def jb_1_area(update: Update, context: CallbackContext):
     keyboard = InlineKeyboardMarkup([
         [InlineKeyboardButton("Bukit Indah", url="https://www.jbescortsvc.com/jb-1-area/bukit-indah-1")],
         [InlineKeyboardButton("Desa Tebrau", url="https://www.jbescortsvc.com/jb-1-area/desa-tebrau-1")],
-        [InlineKeyboardButton("JB Town", url="https://www.jbescortsvc.com/jb-1-area/jb-town-2")],
         [InlineKeyboardButton("Kebun Teh", url="https://www.jbescortsvc.com/jb-1-area/kebun-teh")],
         [InlineKeyboardButton("Nusa Bestari", url="https://www.jbescortsvc.com/jb-1-area/nusa-bestari")],
         [InlineKeyboardButton("Nusa Bestari 2", url="https://www.jbescortsvc.com/jb-1-area/nusa-bestari-2")],
@@ -319,7 +319,6 @@ def jb_2_area(update: Update, context: CallbackContext):
         [InlineKeyboardButton("Bukit Indah", url="https://www.jbescortsvc.com/jb-2-area/bukit-indah")],
         [InlineKeyboardButton("Desa Tebrau", url="https://www.jbescortsvc.com/jb-2-area/desa-tebrau")],
         [InlineKeyboardButton("JB Town", url="https://www.jbescortsvc.com/jb-2-area/jb-town")],       
-        [InlineKeyboardButton("KSL", url="https://www.jbescortsvc.com/jb-2-area/ksl")],
         [InlineKeyboardButton("Mount Austin", url="https://www.jbescortsvc.com/jb-2-area/mount-austin-1")], 
         [InlineKeyboardButton("Pelangi", url="https://www.jbescortsvc.com/jb-2-area/pelangi")],
         [InlineKeyboardButton("Skudai", url="https://www.jbescortsvc.com/jb-2-area/skudai")],
@@ -329,6 +328,7 @@ def jb_2_area(update: Update, context: CallbackContext):
 
 def jb_3_area(update: Update, context: CallbackContext):
     keyboard = InlineKeyboardMarkup([
+        [InlineKeyboardButton("JB Town", url="https://www.jbescortsvc.com/jb-3-area/jb-town-2")],
         [InlineKeyboardButton("Pelangi", url="https://www.jbescortsvc.com/jb-3-area/pelangi-1")],
         [InlineKeyboardButton("Nusa Bestari(Ctm Chinese Only)", url="https://www.jbescortsvc.com/jb-3-area/nusa-bestari-cn")],
         [InlineKeyboardButton("R&F(Ctm Chinese Only)", url="https://www.jbescortsvc.com/jb-3-area/r-f-cn")],
@@ -338,7 +338,7 @@ def jb_3_area(update: Update, context: CallbackContext):
 
 def booking(update: Update, context: CallbackContext):
     keyboard = InlineKeyboardMarkup([
-        [InlineKeyboardButton("WhatsApp", url="https://wa.me/60179857258?text=PM_JB")],
+        [InlineKeyboardButton("WhatsApp", url="https://wa.me/6285194015040?text=PM_JB")],
         [InlineKeyboardButton("WhatsApp 2", url="https://wa.me/601157752859?text=PM_JB")],
         [InlineKeyboardButton("Telegram Admin", url="https://t.me/jbescort7")],
         [InlineKeyboardButton("Live Admin", url="https://go.crisp.chat/chat/embed/?website_id=67d3163f-bdc3-4f3c-a603-e13ab2c65730")],     
