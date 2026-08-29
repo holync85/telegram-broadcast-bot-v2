@@ -350,7 +350,7 @@ def button(update: Update, context: CallbackContext):
         [InlineKeyboardButton("JCIQ", url="https://t.me/+gBCtqDF7ERplMDA1")],
         [InlineKeyboardButton("DSH", url="https://t.me/+ZSlMq5SQGZ02NWY1")],  
     ])
-    update.message.reply_text("Click Area：", reply_markup=keyboard)
+    update.message.reply_text("⭐️Photo & Video Group照片视频群⭐️：", reply_markup=keyboard)
 
 
 def keep_alive():
