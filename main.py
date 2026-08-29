@@ -345,6 +345,13 @@ def booking(update: Update, context: CallbackContext):
     ])
     update.message.reply_text("Click Area：", reply_markup=keyboard)
 
+def button(update: Update, context: CallbackContext):
+    keyboard = InlineKeyboardMarkup([
+        [InlineKeyboardButton("JCIQ", url="https://t.me/+gBCtqDF7ERplMDA1")],
+        [InlineKeyboardButton("DSH", url="https://t.me/+ZSlMq5SQGZ02NWY1")],  
+    ])
+    update.message.reply_text("Click Area：", reply_markup=keyboard)
+
 
 def keep_alive():
     handler = http.server.SimpleHTTPRequestHandler
@@ -375,6 +382,7 @@ def main():
     dp.add_handler(CommandHandler("jb2", jb_2_area))
     dp.add_handler(CommandHandler("jb3", jb_3_area))
     dp.add_handler(CommandHandler("booking", booking))
+    dp.add_handler(CommandHandler("button", button))
 
     updater.start_polling()
     updater.idle()
