@@ -419,7 +419,7 @@ def main():
     dp.add_handler(CommandHandler("jb3", jb_3_area))
     dp.add_handler(CommandHandler("booking", booking))
     dp.add_handler(CommandHandler("button", button))
-    dp.add_handler(CommandHandler("area", button))
+    dp.add_handler(CommandHandler("area", area))
 
     updater.start_polling()
     updater.idle()
