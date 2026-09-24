@@ -352,6 +352,42 @@ def button(update: Update, context: CallbackContext):
     ])
     update.message.reply_text("⭐️Photo & Video Group照片视频群⭐️：", reply_markup=keyboard)
 
+def area(update: Update, context: CallbackContext):
+    keyboard = InlineKeyboardMarkup([
+        [InlineKeyboardButton("CIQ", url="https://www.jbescortsvc.com/jb-hot-area/ciq")],
+        [InlineKeyboardButton("Sentosa", url="https://www.jbescortsvc.com/jb-hot-area/sentosa")],  
+        [InlineKeyboardButton("Sri Yaacob", url="https://www.jbescortsvc.com/jb-hot-area/sri-yaacob")],  
+        [InlineKeyboardButton("JB1 Bukit Indah", url="https://www.jbescortsvc.com/jb-1-area/bukit-indah-1")],  
+        [InlineKeyboardButton("JB1 Desa Tebrau", url="https://www.jbescortsvc.com/jb-1-area/desa-tebrau-1")],  
+        [InlineKeyboardButton("JB1 Nusa Bestari", url="https://www.jbescortsvc.com/jb-1-area/nusa-bestari")],  
+        [InlineKeyboardButton("JB1 Nusa Bestari 2", url="https://www.jbescortsvc.com/jb-1-area/nusa-bestari-2")],  
+        [InlineKeyboardButton("JB2 Bukit Indah", url="https://www.jbescortsvc.com/jb-2-area/bukit-indah")],  
+        [InlineKeyboardButton("JB2 Desa Tebrau", url="https://www.jbescortsvc.com/jb-2-area/desa-tebrau")],  
+        [InlineKeyboardButton("JB2 JB Town", url="https://www.jbescortsvc.com/jb-2-area/jb-town")],  
+        [InlineKeyboardButton("JB2 Mount Austin", url="https://www.jbescortsvc.com/jb-2-area/mount-austin-1")],  
+        [InlineKeyboardButton("JB2 Pelangi", url="https://www.jbescortsvc.com/jb-2-area/pelangi")],  
+        [InlineKeyboardButton("JB2 Skudai", url="https://www.jbescortsvc.com/jb-2-area/skudai")],  
+        [InlineKeyboardButton("JB2 Taman Daya", url="https://www.jbescortsvc.com/jb-2-area/taman-daya")],  
+        [InlineKeyboardButton("JB3 JB Town", url="https://www.jbescortsvc.com/jb-3-area/jb-town-2")],  
+        [InlineKeyboardButton("JB3 Pelangi", url="https://www.jbescortsvc.com/jb-3-area/pelangi-1")],  
+        [InlineKeyboardButton("JB3 Nusa Bestari (CN)", url="https://www.jbescortsvc.com/jb-3-area/nusa-bestari-cn")],  
+        [InlineKeyboardButton("JB3 R&F (CN)", url="https://www.jbescortsvc.com/jb-3-area/r-f-cn")],  
+        [InlineKeyboardButton("KL Cheras", url="https://www.jbescortsvc.com/kl-area/cheras")],  
+        [InlineKeyboardButton("KL Damansara", url="https://www.jbescortsvc.com/kl-area/damansara")],  
+        [InlineKeyboardButton("KL Kepong", url="https://www.jbescortsvc.com/kl-area/kepong")],  
+        [InlineKeyboardButton("KL Kuchai Lama", url="https://www.jbescortsvc.com/kl-area/kuchai-lama")],  
+        [InlineKeyboardButton("KL Petaling Jaya", url="https://www.jbescortsvc.com/kl-area/petaling-jaya")],  
+        [InlineKeyboardButton("KL Puchong", url="https://www.jbescortsvc.com/kl-area/puchong")],  
+        [InlineKeyboardButton("KL Setapak", url="https://www.jbescortsvc.com/kl-area/setapak")],  
+        [InlineKeyboardButton("KL Sri Hartamas", url="https://www.jbescortsvc.com/kl-area/sri-hartamas")],  
+        [InlineKeyboardButton("KL Sri Petaling", url="https://www.jbescortsvc.com/kl-area/sri-petaling")],  
+        [InlineKeyboardButton("KL Sri Petaling 2", url="https://www.jbescortsvc.com/kl-area/sri-petaling-2")],  
+        [InlineKeyboardButton("KL Taman Danau Desa", url="https://www.jbescortsvc.com/kl-area/taman-danau-desa")],  
+        [InlineKeyboardButton("PK Ipoh", url="https://www.jbescortsvc.com/perak-area/ipoh")], 
+        [InlineKeyboardButton("A9", url="https://a9play3.com/R=245629")], 
+    ])
+    update.message.reply_text("⭐️Photo & Video照片视频⭐️：", reply_markup=keyboard)
+
 
 def keep_alive():
     handler = http.server.SimpleHTTPRequestHandler
@@ -383,6 +419,7 @@ def main():
     dp.add_handler(CommandHandler("jb3", jb_3_area))
     dp.add_handler(CommandHandler("booking", booking))
     dp.add_handler(CommandHandler("button", button))
+    dp.add_handler(CommandHandler("area", button))
 
     updater.start_polling()
     updater.idle()
