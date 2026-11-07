@@ -199,7 +199,7 @@ def broadcastpicbtn(update: Update, context: CallbackContext):
         [InlineKeyboardButton("📍 Booking Now", url="https://t.me/jbescort7")],
         [InlineKeyboardButton("📞 WhatsApp", url="https://wa.me/601113130120?text=PM_JB")],
         [InlineKeyboardButton("📞 WhatsApp 2", url="https://wa.me/601157752859?text=PM_JB")],
-        [InlineKeyboardButton("🧑‍💻 Live Booking", url="https://go.crisp.chat/chat/embed/?website_id=67d3163f-bdc3-4f3c-a603-e13ab2c65730")]
+        [InlineKeyboardButton("🧑‍💻 Live Booking", url="https://talk.jbescortsvc.com/jb")]
     ])
 
     success, fail = 0, 0
@@ -244,7 +244,7 @@ def broadcastalbumbtn(update: Update, context: CallbackContext):
         [InlineKeyboardButton("📍 Booking Now", url="https://t.me/jbescort7")],
         [InlineKeyboardButton("📞 WhatsApp", url="https://wa.me/601113130120?text=PM_JB")],
         [InlineKeyboardButton("📞 WhatsApp 2", url="https://wa.me/601157752859?text=PM_JB")],
-        [InlineKeyboardButton("🧑‍💻 Live Booking", url="https://go.crisp.chat/chat/embed/?website_id=67d3163f-bdc3-4f3c-a603-e13ab2c65730")]
+        [InlineKeyboardButton("🧑‍💻 Live Booking", url="https://talk.jbescortsvc.com/jb")]
     ])
 
     success, fail = 0, 0
@@ -277,7 +277,7 @@ def broadcastvidfullbtn(update: Update, context: CallbackContext):
         [InlineKeyboardButton("📍 Booking Now", url="https://t.me/jbescort7")],
         [InlineKeyboardButton("📞 WhatsApp", url="https://wa.me/601113130120?text=PM_JB")],
         [InlineKeyboardButton("📞 WhatsApp 2", url="https://wa.me/601157752859?text=PM_JB")],
-        [InlineKeyboardButton("🧑‍💻 Live Booking", url="https://go.crisp.chat/chat/embed/?website_id=67d3163f-bdc3-4f3c-a603-e13ab2c65730")]
+        [InlineKeyboardButton("🧑‍💻 Live Booking", url="https://talk.jbescortsvc.com/jb")]
     ])
 
     success, fail = 0, 0
@@ -341,7 +341,7 @@ def booking(update: Update, context: CallbackContext):
         [InlineKeyboardButton("WhatsApp", url="https://wa.me/601113130120?text=PM_JB")],
         [InlineKeyboardButton("WhatsApp 2", url="https://wa.me/601157752859?text=PM_JB")],
         [InlineKeyboardButton("Telegram Admin", url="https://t.me/jbescort7")],
-        [InlineKeyboardButton("Live Admin", url="https://go.crisp.chat/chat/embed/?website_id=67d3163f-bdc3-4f3c-a603-e13ab2c65730")],     
+        [InlineKeyboardButton("Live Admin", url="https://talk.jbescortsvc.com/jb")],     
     ])
     update.message.reply_text("Click Area：", reply_markup=keyboard)
 
